@@ -2,7 +2,7 @@
 
 ## Questions
 
-#### 1. What is the difference between `== / !=` and `=== / !==` ?
+#### 1. What is the difference between `== / !=` and `=== / !==` , provide a simple example that using each option would result in a different output?
 
 #### 2. What is the root object ( parent ) of all JavaScript objects in Node and in Browsers? 
 
@@ -147,4 +147,4 @@ ul.shopping-list li .highlight {
 }
 ```
 
-1. ​
+​
