@@ -1,0 +1,73 @@
+<style>
+    .item-content p {
+  color: blue;
+}
+
+div.special div {
+  color: grey;
+}
+
+div.special>div {
+  color: purple;
+}
+
+.item-content>p {
+  color: red;
+}
+
+div>.accordion-item.open .item-content {
+  color: blue;
+}
+
+div>.accordion-item.open {
+  color: green;
+}
+
+div:nth-of-type(2) {
+  color: yellow;
+}
+
+div {
+  color: black;
+}
+
+#item-title {
+  color: magenta;
+}
+
+ul.shopping-list li .highlight {
+  color: red;
+}
+
+.special>div>div:nth-of-type(odd) {
+  color: blue;
+}
+</style>
+<div class="accordion">
+    Snake
+    <div class="accordion-item open">
+        <div id="item-title">Turtle</div>
+        <div class="item-content" style="color:pink;">
+            Pig
+            <p>Fox</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="item-title">Whale</div>
+        <div class="item-content special">
+            Wolf
+            <div>
+                Lion
+                <div>
+                    Frog
+                </div>
+                <div>
+                    Zebra
+                </div>
+            </div>
+            <div>
+                Tiger
+            </div>
+        </div>
+    </div>
+</div>
