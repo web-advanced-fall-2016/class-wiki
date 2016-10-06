@@ -60,9 +60,9 @@ array[5] = 3;
 console.log(array.length);
 array.name = 12;
 console.log(array.length);
-array.'3' = 6;
+array['3'] = 40;
 console.log(array.length);
-array.'30.0' = 30.01;
+array['30.0'] = 30.01;
 console.log(array.length);
 ```
 
