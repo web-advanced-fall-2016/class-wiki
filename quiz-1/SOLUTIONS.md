@@ -44,7 +44,7 @@ let time = 200;
 let counter = 0;
 let interval = setInterval(function(){
   if(counter*5 < 50){
-	console.log(counter*5);
+	console.log(counter++ * 5);
   }else{
 	clearInterval(interval);
   }
@@ -66,4 +66,32 @@ let interval = setInterval(function(){
 ------
 
 #### 7.
+
+In JavaScript, `this` keyword works and means different from its role in other programming languages like C++. `this` keyword is a special keyword for functions. It's value depends on what context the function is called. You always manually determine the context in which you want a function to be called, using `bind()` method. In the global context (not inside any functions), `this` refers to `window` object (In browsers `window` is our global object, in Node, the global object is called  `global` ). Functions that are set as for properties of an object, will have their `this` keyword assign to the calling object. Arrow functions, introduced in ES2015, have their `this` keyword set to the object the function was declared in and regardless of the context it was called in.
+
+These are just a few rules and exceptions about `this`. It's such a confusing thing in JavaScript. But if you wanna know everything about it, read this : https://rainsoft.io/gentle-explanation-of-this-in-javascript/.
+
+Answer of the problem is:`My name is Laura! My name is John!, My name is Mike!`.
+
+------
+
+#### 8.
+
+You just need to use the prefix keyword that Javascript functions  have called `arguments`. This property is an array that holds all the input parameters of the function call.
+
+```javascript
+function sum() {
+  let s = 0;
+  for(a of arguments) {
+    s += a;
+  }
+  return s;
+}
+```
+
+------
+
+#### 9.
+
+` 1 2 2 5 6 6 6 6`
 
