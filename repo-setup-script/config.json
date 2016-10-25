@@ -1,0 +1,12 @@
+{
+    "students": [{
+        "name": "Saman Tehrani",
+        "githubUser": "samartehrani",
+        "email": "saman.com"
+    }, {
+        "name": "Zachary Collopy",
+        "githubUser": "zollopy",
+        "email": "zac.com"
+    }],
+    "sessionCount": 16
+}
