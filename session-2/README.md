@@ -1,5 +1,11 @@
 # Session 2
 
+Make sure you have `readline-sync` installed in your local folder. If not, install it using following command:
+
+`npm install readline-sync`
+
+
+
 #### Readings
 
 * [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
