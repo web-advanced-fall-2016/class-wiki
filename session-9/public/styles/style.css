@@ -1,0 +1,105 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,700';
+body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: #fafafa;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+}
+
+#header {
+    font-size: 56px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 10px;
+    height: 60px;
+    background: #3949AB;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+#footer {
+    width: 100%;
+    height: 40px;
+    background: #5e5a64;
+}
+
+#wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    height: calc(100vh - 140px);
+    padding: 10px 10px;
+}
+
+#current-mode {
+    flex: 0 1 48.5%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 2%;
+}
+
+.title {
+    font-size: 40px;
+    background-color: #e4e4e4;
+    padding: 5px 0px 5px 10px;
+    font-weight: 700;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+#current-mode>.item {
+    display: flex;
+    flex: auto;
+    padding: 0px 10px 0px 10px;
+}
+
+#mode-collection {
+    flex: 0 1 48.5%;
+    display: flex;
+    margin-right: 2%;
+    flex-flow: column nowrap;
+}
+
+#mode-collection>.row {
+    flex: 33.3%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px 0px 10px 10px;
+}
+
+.row>.item {
+    display: flex;
+    flex: auto;
+    padding: 10px 0px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.item>img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: all 300ms;
+}
+
+#mode-collection .item>img {
+    position: absolute;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+#mode-collection .item>img:active {
+    box-shadow: 0px 0px 10px 10px rgba(255, 0, 0, 0.2);
+    transition: all 300ms;
+}

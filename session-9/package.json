@@ -1,0 +1,14 @@
+{
+  "name": "express-test",
+  "version": "0.0.1",
+  "description": "Class experiment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saman Tehrani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
