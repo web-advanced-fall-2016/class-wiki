@@ -1,6 +1,5 @@
 (function() {
     let URL = "http://api.github.com/users/samantehrani/repos";
-
     let jqueryButton = document.querySelector('.jquery');
 
     jqueryButton.addEventListener('click', function() {

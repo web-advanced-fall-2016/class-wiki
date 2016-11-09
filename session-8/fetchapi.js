@@ -3,7 +3,7 @@
 
     let fetchButton = document.querySelector('.fetch');
     fetchButton.addEventListener('click', function() {
-        var headers = new Headers();
+        var myHeaders = new Headers();
         //headers.append("Accept", "application/json");
         var options = {
             method: 'GET',
@@ -17,6 +17,8 @@
             })
             .then(function(json) {
                 console.log(json);
+            }).catch(function(err) {
+                console.log(err);
             });
     });
 })()

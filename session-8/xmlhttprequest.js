@@ -14,8 +14,6 @@
                     } else {
                         console.log(httpRequest.responseText);
                     }
-
-
                 }
             }
         }
