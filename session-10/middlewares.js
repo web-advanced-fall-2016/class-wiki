@@ -3,6 +3,7 @@ const express = require('express');
 const port = 3000;
 
 const app = express();
+// different ways to define middlewares
 // .use
 // .get
 // .post
@@ -44,7 +45,7 @@ app.post('/', function(req, res) {
 });
 
 app.use(function(req, res, next) {
-    console.log("I am the last middleware! responsing.");
+    console.log("I am the last middleware! responding.");
     res.send('Thanks for contacting');
 });
 
